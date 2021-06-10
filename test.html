@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test Suite</title>
+<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.16.0.css">
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.16.0.js"></script>
+  <script src="controller.js"></script>
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+
+    let wins;
+    let loss;
+    let draw;
+    let viewLosses = '';
+    let viewWins='';
+  
+    QUnit.module('add', function() {
+      QUnit.test('should add two numbers', function(assert) {
+        assert.equal(add(1, 1), 2);
+      });
+    });
+    QUnit.module('supermodul', function() {
+        QUnit.test('return 1 loss', function(assert) {
+            wins = 0;
+            loss = 1;
+            draw = 0;
+            viewStats();
+
+            actual = viewLosses;
+            expected = `You have lost a total of: 1 times.<br/>`;
+            assert.equal(actual, expected);
+        });
+
+        QUnit.test('return 1 win', function(assert) {
+            wins = 1;
+            loss = 0;
+            draw = 0;
+            viewStats();
+
+            actual = viewWins;
+            expected =  `You have won a total of: 1 times.<br/>`;
+            assert.equal(actual, expected);
+        });
+
+        //viewStats()
+    });
+  </script>
+</body>
