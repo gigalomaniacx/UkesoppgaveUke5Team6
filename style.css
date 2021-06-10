@@ -1,0 +1,9 @@
+.button {
+    color: blue;
+    background-color: lightblue;
+
+}
+
+.button:hover {
+    opacity: 80%;
+}
