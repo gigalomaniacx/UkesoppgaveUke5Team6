@@ -11,9 +11,5 @@ function updateView(){
         ${viewWins}
         ${viewLosses}
         ${viewDraws}
-        <!--You have won a total of: ${wins} times.<br/>
-        You have lost a total of: ${loss} times.<br/>
-        There has been ${draw} draws.-->
-
     `;
 }
