@@ -1,9 +1,58 @@
-.button {
-    color: blue;
-    background-color: lightblue;
+body 
+{
+    background-color: rgb(56, 182, 140);
+    width: 600px;
+    border: 5px solid green;
+    padding: 60px;
+    margin: 30px;  
+    box-shadow: 2px 0 2px 2px black, 2px 2px 2px 2px green;
+}
+.button{
+    
+    display: inline-block;
+    padding: 0.5em 3em;
+    margin:2px 0 0 60px ;
+    text-decoration: none;
+    background: #012677;/*ButtonColor*/
+    color: #FFF;
+    border-bottom: solid 3px #001a53;
+    border-radius: 3px;
+}
+.button:active {/*OnClick*/
 
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*Move down*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*Reduce Shadow*/
+    border-bottom: none;
+}
+h1 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    box-shadow: 0px 0 3px 4px black;
+    margin-top: -25px;
+}
+p 
+{
+    font-size: 30px;
+}
+.ikon1
+{
+    font-size: 250%;
+    text-align: center;
+}
+.svar 
+{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.infotxt 
+{
+text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.button:hover {
-    opacity: 80%;
-}
+
+
